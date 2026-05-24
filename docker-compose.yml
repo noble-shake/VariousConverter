@@ -1,0 +1,12 @@
+services:
+  media-downloader:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./downloads:/downloads
+    environment:
+      - PORT=3000
+      - DOWNLOADS_DIR=/downloads
+      - YTDLP_PATH=yt-dlp
+    restart: unless-stopped

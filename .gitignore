@@ -141,3 +141,28 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Media downloads
+downloads/
+*.mp3
+*.mp4
+*.m4a
+*.webm
+*.mkv
+*.avi
+*.flac
+*.wav
+*.opus
+
+# yt-dlp / ffmpeg binaries (if placed locally)
+yt-dlp
+yt-dlp.exe
+ffmpeg
+ffmpeg.exe
+ffprobe
+ffprobe.exe
+
+# Runtime / temp
+*.part
+*.ytdl
+*.temp
